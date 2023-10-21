@@ -23,7 +23,7 @@ func main() {
 
 	log.Printf("DNS Watchdog task has been started")
 
-	count := 0
+	count := 24
 	execLookup(*client, channelId, dnsServer, domain, &count)
 	for {
 		select {
